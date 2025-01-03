@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alshamalia's</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Alshamalia Links</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            padding: 0;
+        }
+
+        .button {
+            width: 50%;
+            height: 100%;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .button:first-child {
+            background-color: #1e293b;
+        }
+
+        .button:last-child {
+            background-color: #2C201C;
+        }
+
+        .button:hover {
+            transform: scale(1.02);
+            filter: brightness(110%);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Alshamalia's Homepage</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About This Website</h2>
-            <p>This is a simple website built using HTML, CSS, and a little bit of JavaScript.</p>
-        </section>
-        <section>
-            <h2>Choose a Person</h2>
-            <div class="buttons">
-                <a href="http://talal.alshamalia.net" class="button">Talal</a>
-                <a href="http://hussam.alshamalia.net" class="button">Hussam</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Simple Website</p>
-    </footer>
-    <script src="scripts.js"></script>
+    <button class="button" onclick="window.location.href='https://talal.alshamalia.net/'">Talal</button>
+    <button class="button" onclick="window.location.href='https://hussam.alshamalia.net/'">Hussam</button>
 </body>
-</html>
+</html> 
